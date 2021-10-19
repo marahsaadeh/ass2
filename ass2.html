@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>  
+<head>   
+    <meta charset="UTF-8">
+    <title>Image Generator</title>
+</head>  
+<script>  
+var x=[ 'url("first.jpg")','url("second.jpg")','url("third.jpg")','url("fourth.jpg")','url("fifth.webp ")'];
+ 
+function showImage(x) {  
+ 
+var n = Math.floor(Math.random()*x.length);
+ 
+document.getElementById("result").innerHTML += '<img src="'+ x[n] +'" style="width:200px;height:200px;" />';  }  
+</script>  
+<body style="background-color: black;">  
+<center><h1> Image Generator </h1>  
+<h3> Click :</h3>   
+<button style="border:1px double black;height:35px;" onclick = "showImage(x)"> showImage</button>  
+</center> 
+<br> <br>  
+<p id="result"> </p> 
+    
+</body>    
+</htm>
+
